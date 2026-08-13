@@ -1,11 +1,245 @@
 <!DOCTYPE html>
-<html lang="pt- br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto de educação digital</title>
+    <title>FutTotal - O Seu Blog de Futebol</title>
+    <style>
+        /* ==========================================
+           1. ESTILOS GERAIS E RESETS
+           ========================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #333333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1b5e20;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2e7d32;
+        }
+
+        /* Container para centralizar e limitar a largura */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ==========================================
+           2. CABEÇALHO (HEADER)
+           ========================================== */
+        header {
+            background: linear-gradient(135deg, #1b5e20 0%, #388e3c 100%);
+            color: #ffffff;
+            padding: 40px 0 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header .blog-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        header .blog-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        /* Menu de Navegação */
+        nav ul {
+            list-style: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 15px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul li a:hover {
+            color: #a5d6a7;
+        }
+
+        /* ==========================================
+           3. CONTEÚDO PRINCIPAL E POSTAGENS
+           ========================================== */
+        main {
+            margin: 40px auto;
+        }
+
+        .post {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 5px solid #2e7d32;
+        }
+
+        .post-tag {
+            display: inline-block;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .post-title {
+            font-size: 1.8rem;
+            color: #1b5e20;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .post-meta {
+            font-size: 0.85rem;
+            color: #777777;
+            margin-bottom: 18px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 10px;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            color: #444444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .btn-read-more {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-read-more:hover {
+            background-color: #1b5e20;
+            color: #ffffff;
+        }
+
+        /* ==========================================
+           4. RODAPÉ (FOOTER)
+           ========================================== */
+        footer {
+            background-color: #1a1a1a;
+            color: #aaaaaa;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            border-top: 3px solid #2e7d32;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-links a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        footer .social-links a:hover {
+            color: #81c784;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <div class="container">
+            <h1 class="blog-title">FutTotal</h1>
+            <p class="blog-subtitle">Análises, táticas e as melhores histórias do futebol mundial</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Táticas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <article class="post">
+            <span class="post-tag">Análise Tática</span>
+            <h2 class="post-title">A Evolução dos Pontas Invertidos no Futebol Moderno</h2>
+            <div class="post-meta">
+                Publicado em <span>12 de Agosto de 2026</span> por <strong>Carlos Silva</strong>
+            </div>
+            <div class="post-content">
+                <p>
+                    Nas últimas décadas, a função do ponta mudou radicalmente. O tradicional jogador de linha de fundo, especialista em cruzar bolas na área, deu lugar ao "ponta invertido" — atletas canhotos jogando pela direita ou diestros jogando pela esquerda. Esse movimento tático permite que os atacantes cortem para o centro do campo e finalizem diretamente ao gol, criando superioridade numérica na zona central.
+                </p>
+            </div>
+            <a href="#" class="btn-read-more">Leia mais &rarr;</a>
+        </article>
+
+        <article class="post">
+            <span class="post-tag">Mundo do Futebol</span>
+            <h2 class="post-title">Como a Tecnologia de Dados está Mudando as Contratações</h2>
+            <div class="post-meta">
+                Publicado em <span>10 de Agosto de 2026</span> por <strong>Mariana Oliveira</strong>
+            </div>
+            <div class="post-content">
+                <p>
+                    O futebol moderno vive a era do <em>Big Data</em>. Clubes de elite não dependem apenas da intuição de olheiros para contratar novos talentos; hoje, algoritmos analisam métricas como gols esperados (xG), passes progressivos, pressões bem-sucedidas e mapas de calor de milhares de jogadores ao redor do mundo. Essa abordagem científica minimiza riscos financeiros e descobre joias escondidas em ligas periféricas.
+                </p>
+            </div>
+            <a href="#" class="btn-read-more">Leia mais &rarr;</a>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FutTotal. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
